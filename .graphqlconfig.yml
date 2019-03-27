@@ -1,0 +1,16 @@
+projects:
+  giddyupproject:
+    schemaPath: src\graphql\schema.json
+    includes:
+      - src\graphql\**\*.graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: angular
+        generatedFileName: src\app\API.service.ts
+        docsFilePath: src\graphql
+        graphQLApiId: i57m4p3yxzdsxhntl5w3gkyyii
+      endpoints:
+        prod: >-
+          https://2zyydbc3wrckrbjntfvexclrxy.appsync-api.us-east-1.amazonaws.com/graphql

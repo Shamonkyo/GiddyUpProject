@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "giddyupproject",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito7454c247",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

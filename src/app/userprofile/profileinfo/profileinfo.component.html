@@ -1,0 +1,52 @@
+
+<mat-card fxFlex="40%" feFlex.xs="80%">
+  <mat-card-title align="center" >Customer Profile</mat-card-title>
+  <mat-card-content>
+<form fxLayout="column" fxLayoutAlign="center center " >
+  <mat-form-field class="full-width" >
+
+    <input  matInput placeholder=First Name   name="first" [(ngModel)]="user.firstName"  required="" #fnameInput="ngModel">
+    <mat-error *ngIf="fnameInput.hasError('required')">Field must not be empty.</mat-error>
+    <mat-hint align="end">Hint: Jon</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+
+    <input  matInput placeholder="Last Name"   name="last" [(ngModel)]="user.lastName"  required="" #lnameInput="ngModel" >
+    <mat-error *ngIf="lnameInput.hasError('required')">Field must not be empty.</mat-error>
+    <mat-hint align="end"> Last name example: Snow</mat-hint>
+  </mat-form-field>
+  <!--<mat-form-field class="full-width">
+    <textarea matInput="" placeholder="Address"></textarea>
+
+  </mat-form-field-->
+  <mat-form-field class="full-width">
+
+    <textarea matInput="" placeholder="Address" name="address" [(ngModel)]="user.address"></textarea>
+
+  </mat-form-field>
+<mat-form-field class="full-width">
+
+  <input  matInput placeholder="Telephone number"   name="phoneNumber" [(ngModel)]="user.phoneNumber" required=""
+          #phoneInput="ngModel"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+  <mat-error *ngIf="phoneInput.hasError('required')">Phone number is required.</mat-error>
+  <mat-hint align="end">Hint: xxx-xxx-xxxx</mat-hint>
+
+</mat-form-field>
+  <mat-checkbox ngModel="" required="" name="agreeForm" color="accent"> Agree to Terms and Conditions.</mat-checkbox>
+</form>
+
+  </mat-card-content>
+  <mat-card-actions align="center">
+
+    <button mat-raised-button color="accent" type="submit"  (click)="updateProfile()">Update</button>
+
+  </mat-card-actions>
+
+
+</mat-card>
+
+
+
+
+

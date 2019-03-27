@@ -1,0 +1,13 @@
+{
+    "bucketName": "giddyup",
+    "authPolicyName": "s3_amplify_4a15bc05",
+    "unauthPolicyName": "s3_amplify_4a15bc05",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": ""
+}

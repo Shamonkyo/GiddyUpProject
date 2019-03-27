@@ -1,0 +1,22 @@
+/*mat-form-field {
+
+  width: 300px;
+}
+
+
+.profileform{
+
+  background-color: slategray;
+}*/
+
+.mat-card{
+
+  width: 700px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.mat-card .full-width{
+  width: 100%;
+
+}

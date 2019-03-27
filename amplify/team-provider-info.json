@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "giddyupproject-20190303183740-authRole",
+            "UnauthRoleArn": "arn:aws:iam::997405721449:role/giddyupproject-20190303183740-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::997405721449:role/giddyupproject-20190303183740-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "giddyupproject-20190303183740-deployment",
+            "UnauthRoleName": "giddyupproject-20190303183740-unauthRole",
+            "StackName": "giddyupproject-20190303183740",
+            "StackId": "arn:aws:cloudformation:us-east-1:997405721449:stack/giddyupproject-20190303183740/5610f680-3e0d-11e9-9c64-126c686965ae"
+        },
+        "categories": {
+            "auth": {
+                "cognito9b58f92c": {},
+                "cognito7454c247": {}
+            }
+        }
+    }
+}

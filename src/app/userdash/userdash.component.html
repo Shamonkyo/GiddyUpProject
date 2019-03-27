@@ -1,0 +1,60 @@
+
+
+<mat-toolbar color="accent">
+  <span>User Dashboard </span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="remaining-space"></span>
+
+ <mat-icon>person </mat-icon>
+  <span>Hi {{username}}!</span>
+</mat-toolbar>
+<!--<button class="amplify-form-button" (click)="logOut()">logout</button>-->
+
+
+
+
+<mat-tab-group>
+  <mat-tab >
+    <ng-template mat-tab-label="">
+      <mat-icon class="tab-icon">person </mat-icon>
+      User Profile
+    </ng-template>
+
+    <app-profileinfo></app-profileinfo>
+
+  </mat-tab>
+
+  <mat-tab label="Billing Information">
+    <ng-template mat-tab-label="">
+
+      <mat-icon class="tab-icon">payment</mat-icon>
+      Billing Information
+    </ng-template>
+
+    Billing Information content
+
+  </mat-tab>
+
+  <mat-tab label="Billing Information">
+    <ng-template mat-tab-label="">
+
+      <mat-icon class="tab-icon">history</mat-icon>
+      Ride History
+    </ng-template>
+
+    Rider History content
+
+  </mat-tab>
+
+</mat-tab-group>
+
+
+
+
+
+
+
+
+
+
